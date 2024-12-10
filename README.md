@@ -59,8 +59,8 @@ Follow these steps to set up, customize, and deploy the app.
 ### 1. Clone the Repository
 Clone the repository and navigate to the project folder:
 ```bash
-git clone https://github.com/[your-org]/ai-twin-public-app.git
-cd ai-twin-public-app
+git clone https://github.com/prifina/twin-app.git
+cd twin-app
 ```
 
 ### 2. Install Dependencies
