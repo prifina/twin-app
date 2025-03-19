@@ -1,0 +1,245 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  width: 100dvw;
+  height: 100dvh;
+  /* background-color: #F7FAFC; */
+}
+
+textarea {
+  border: none;
+}
+
+textarea:focus-visible {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@supports not selector(:focus-visible) {
+  textarea:focus {
+    outline: none !important;
+  }
+}
+
+.messageInputs {
+  width: 100%;
+}
+
+#send-question {
+  width: 60px;
+  border-radius: 0 7px 7px 0;
+  /* surrounding border is 1px, so this radius is 8px-1px */
+}
+
+.dots {
+  margin-left: 10px;
+  color: black;
+  width: 35px;
+  height: 15px;
+  --d: radial-gradient(farthest-side, currentColor 90%, #0000);
+  background: var(--d), var(--d), var(--d), var(--d);
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+  animation: m 1s infinite;
+}
+
+@keyframes m {
+  0% {
+    background-position: calc(0 * 100% / 3) 100%, calc(1 * 100% / 3) 100%,
+      calc(2 * 100% / 3) 100%, calc(3 * 100% / 3) 100%;
+  }
+
+  12.5% {
+    background-position: calc(0 * 100% / 3) 0, calc(1 * 100% / 3) 100%,
+      calc(2 * 100% / 3) 100%, calc(3 * 100% / 3) 100%;
+  }
+
+  25% {
+    background-position: calc(0 * 100% / 3) 0, calc(1 * 100% / 3) 0,
+      calc(2 * 100% / 3) 100%, calc(3 * 100% / 3) 100%;
+  }
+
+  37.5% {
+    background-position: calc(0 * 100% / 3) 0, calc(1 * 100% / 3) 0,
+      calc(2 * 100% / 3) 0, calc(3 * 100% / 3) 100%;
+  }
+
+  50% {
+    background-position: calc(0 * 100% / 3) 0, calc(1 * 100% / 3) 0,
+      calc(2 * 100% / 3) 0, calc(3 * 100% / 3) 0;
+  }
+
+  62.5% {
+    background-position: calc(0 * 100% / 3) 100%, calc(1 * 100% / 3) 0,
+      calc(2 * 100% / 3) 0, calc(3 * 100% / 3) 0;
+  }
+
+  75% {
+    background-position: calc(0 * 100% / 3) 100%, calc(1 * 100% / 3) 100%,
+      calc(2 * 100% / 3) 0, calc(3 * 100% / 3) 0;
+  }
+
+  87.5% {
+    background-position: calc(0 * 100% / 3) 100%, calc(1 * 100% / 3) 100%,
+      calc(2 * 100% / 3) 100%, calc(3 * 100% / 3) 0;
+  }
+
+  100% {
+    background-position: calc(0 * 100% / 3) 100%, calc(1 * 100% / 3) 100%,
+      calc(2 * 100% / 3) 100%, calc(3 * 100% / 3) 100%;
+  }
+}
+
+.sidebar {
+  padding-top: 20px;
+  /*  margin-top: 20px; */
+  height: 100dvh;
+  /*  background-color: lightgray; */
+  border-right: 2px outset #999;
+  /*  box-shadow: 5px 0 5px -5px #999; */
+}
+
+.content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari, and other WebKit-based browsers */
+}
+
+.answer-footer {
+  border-top: 1px solid black;
+  padding: 5px;
+}
+
+.input-no-borders {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.input-no-borders input {
+  border: none !important;
+}
+
+.details {
+  border-top: 1px solid gray;
+}
+
+.details-text {
+  font-size: small;
+}
+
+.details-error {
+  font-weight: bold;
+  color: crimson;
+}
+
+.alert-color {
+  color: crimson;
+  fill: crimson;
+}
+
+.good-color {
+  color: green;
+  fill: green;
+}
+
+.warning-color {
+  color: orange;
+  fill: orange;
+}
+
+.info-color {
+  color: turquoise;
+  fill: turquoise;
+}
+
+.user {
+  /* background-color: #edf2f7; */
+}
+
+.ai {
+  /* background-color: #f7fafc; */
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  @media (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.profile svg {
+  width: 100%;
+  height: 100%;
+}
+
+.profile img {
+  width: 48px;
+  height: 48px;
+  /*  object-fit: contain; */
+  object-fit: fill;
+  min-width: 48px;
+  min-height: 48px;
+
+  @media (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+  }
+}
+
+.question {
+  color: #4a5568;
+
+  font-size: 20px;
+
+  max-width: 100%;
+
+  /* overflow-x: auto;
+ */
+  @media (max-width: 768px) {
+    font-size: 14px;
+
+    padding-right: 5px;
+  }
+
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.answer {
+  color: #4a5568;
+
+  font-size: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+
+    padding-right: 5px;
+  }
+
+  max-width: 100%;
+}
+
+.welcomeContainer {
+  /* cursor: pointer; */
+  width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+}

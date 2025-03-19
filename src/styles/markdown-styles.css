@@ -1,0 +1,16 @@
+.markdownStyles h1,
+.markdownStyles h2,
+.markdownStyles h3,
+.markdownStyles h4,
+.markdownStyles h5,
+.markdownStyles h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+
+.markdownStyles ul,
+.markdownStyles ol,
+.markdownStyles li {
+  margin: revert;
+  padding: revert;
+}

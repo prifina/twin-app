@@ -1,0 +1,11 @@
+NEXT_PUBLIC_APP_ID=speak-to
+NEXT_PUBLIC_NETWORK_ID=x_prifina
+MIDDLEWARE_API_URL=https://speaker.d1aik2ngov3nv6.amplifyapp.com/api/
+CORE_API_URL=https://vyvx4f41ec.execute-api.us-east-1.amazonaws.com/dev/
+SPEAK_TO_WEB=https://www.prifina.com/
+NEXT_PUBLIC_APP_DEV=false
+NEXT_PUBLIC_APP_DEBUG=false
+JWT_SECRET_BASE64=<JWT-SECRET-BASE64>
+CORE_API_KEY=<CORE-API-KEY>
+MY_REGION=us-east-1
+SPEAK_TO_CDN=cdn.speak-to.ai
