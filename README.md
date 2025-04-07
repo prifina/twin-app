@@ -47,7 +47,7 @@ You have full control over the app's appearance and branding while retaining cor
 ### Build Beyond Basics
 Partners can build additional features or extend the app to suit their needs. However, modifications must:
 1. Not "break" the app or introduce vulnerabilities or sneaky practices.
-2. Ensure compliance with Prifina's existing **[General User Terms](https://www.prifina.com/ai-twin-general-user-terms.html)** and **[General Privacy Policy](https://www.prifina.com/ai-twin-general-privacy-policy.html)**.
+2. Ensure compliance with Prifina's existing **[General User Terms](https://www.prifina.com/terms.html)** and **[General Privacy Policy](https://www.prifina.com/privacy.html)**.
 3. Provide updated customer-facing **Terms of Use** and **Privacy Terms** if their changes go beyond the basic functionality catered by Prifina.
 
 ---
